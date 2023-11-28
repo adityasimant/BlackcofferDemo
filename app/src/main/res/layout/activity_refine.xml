@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".refineActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/DarkBlue"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/back"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:layout_margin="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Refine"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Your availability"
+        android:textColor="@color/DarkBlue"
+        android:background="@color/white"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20sp"
+        android:layout_marginStart="20sp"/>
+    
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Available | Hey Let us connect"
+        android:textColorHint="@color/DarkBlue"
+        android:layout_marginEnd="20sp"
+        android:layout_marginStart="20sp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        >
+        <AutoCompleteTextView
+            android:id="@+id/autotext"
+            android:layout_width="match_parent"
+            android:textColor="@color/DarkBlue"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/edt_bg_two"
+            android:layout_height="wrap_content"
+            android:inputType="none"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add your status"
+        android:textColor="@color/DarkBlue"
+        android:background="@color/white"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20sp"
+        android:layout_marginStart="20sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textAlignment="viewStart"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:gravity="top|start"
+        android:text="Hi community! I am open to new connections"
+        android:textColor="@color/DarkBlue"
+        android:background="@drawable/edt_bg_two"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="47/250"
+        android:textColor="@color/DarkBlue"
+        android:textSize="10dp"
+        android:layout_gravity="end"
+        android:layout_marginEnd="20sp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Hyper local Distance"
+        android:textColor="@color/DarkBlue"
+        android:background="@color/white"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20sp"
+        android:layout_marginStart="20sp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1KM"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/DarkBlue"
+            android:textSize="15dp"/>
+
+        <com.google.android.material.slider.Slider
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="20sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="100 KM"
+            android:layout_margin="10dp"
+            android:textColor="@color/DarkBlue"
+            android:textSize="15dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Purpose"
+        android:textColor="@color/DarkBlue"
+        android:background="@color/white"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20sp"
+        android:layout_marginStart="20sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/toggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:background="@drawable/button_bg"
+            android:padding="10dp"
+            android:text="Coffee"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/toggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:background="@drawable/button_bg"
+            android:padding="10dp"
+            android:text="Business"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:textStyle="normal" />
+
+
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:background="@drawable/button_bg"
+            android:padding="10dp"
+            android:text="Hobbies"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:background="@drawable/button_bg"
+            android:padding="10dp"
+            android:text="Friendship"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:textStyle="normal" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:background="@drawable/button_bg"
+            android:padding="10dp"
+            android:text="Movies"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:background="@drawable/button_bg"
+            android:padding="10dp"
+            android:text="Dinning"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:background="@drawable/button_bg"
+            android:padding="10dp"
+            android:text="Dating"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:background="@drawable/button_bg"
+            android:padding="10dp"
+            android:text="Matrimony"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:textStyle="normal" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bg"
+        android:text="Save and Explore"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:textSize="15dp"
+        android:layout_marginTop="45dp"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:padding="13dp"
+
+        />
+
+
+
+</LinearLayout>
